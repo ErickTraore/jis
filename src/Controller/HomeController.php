@@ -6,7 +6,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
 
-
+/**
+ * @Route("/")
+*/
 class HomeController extends AbstractController
 {
     /**
@@ -18,7 +20,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/contact", name="home_contact")
      */
     public function contact()
     { 
@@ -26,7 +28,7 @@ class HomeController extends AbstractController
     }
     
     /**
-     * @Route("/about", name="about")
+     * @Route("/about", name="home_about")
      */
     public function about()
     { 
